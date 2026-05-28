@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contáctanos | ICASERG SAC</title>
+
+  <meta
+    name="description"
+    content="Contáctate con ICASERG SAC para cotizar instalación, mantenimiento o reparación de chillers y aire acondicionado comercial e industrial para empresas privadas en Lima y provincias."
+  />
+
+  <meta
+    name="keywords"
+    content="contacto ICASERG SAC, cotizar mantenimiento de chillers, cotizar reparación de chillers, aire acondicionado para empresas, climatización empresarial, Lima, Perú"
+  />
+
+  <meta name="author" content="ICASERG SAC" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://www.icaserg.com/contacto/" />
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+
+  <meta property="og:title" content="Contáctanos | ICASERG SAC" />
+  <meta property="og:description" content="Cotiza servicios de chillers y aire acondicionado comercial/industrial para empresas privadas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.icaserg.com/contacto/" />
+  <meta property="og:image" content="https://www.icaserg.com/assets/fondo1.png" />
+
+  <style>
+    :root {
+      --azul-oscuro: #07324F;
+      --azul-profundo: #05263C;
+      --azul-principal: #0B4A78;
+      --azul-medio: #1C78B0;
+      --celeste: #43BFD0;
+      --gris-fondo: #F5F8FA;
+      --gris-borde: #DCE2E5;
+      --gris-texto: #5F6F7A;
+      --negro: #1F2529;
+      --blanco: #FFFFFF;
+      --whatsapp: #25D366;
+      --shadow: 0 18px 45px rgba(7, 50, 79, 0.16);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--negro);
+      background: var(--blanco);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: 0 auto;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: 900;
+      font-size: 0.96rem;
+      transition: 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .btn-primary {
+      background: var(--azul-principal);
+      color: var(--blanco);
+      box-shadow: 0 10px 26px rgba(11, 74, 120, 0.28);
+    }
+
+    .btn-primary:hover {
+      background: var(--azul-profundo);
+      transform: translateY(-2px);
+    }
+
+    .btn-whatsapp {
+      background: var(--whatsapp);
+      color: var(--blanco);
+      box-shadow: 0 10px 26px rgba(37, 211, 102, 0.25);
+    }
+
+    .btn-whatsapp:hover {
+      filter: brightness(0.96);
+      transform: translateY(-2px);
+    }
+
+    .btn-light {
+      background: var(--blanco);
+      color: var(--azul-oscuro);
+    }
+
+    .btn-light:hover {
+      background: #EAF7FD;
+      transform: translateY(-2px);
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.98);
+      border-bottom: 1px solid var(--gris-borde);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    .navbar {
+      height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .logo img {
+      height: 54px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+      font-size: 0.95rem;
+      font-weight: 800;
+    }
+
+    .nav-menu > li {
+      position: relative;
+    }
+
+    .nav-menu a {
+      color: var(--negro);
+      white-space: nowrap;
+      transition: 0.2s ease;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a.active {
+      color: var(--azul-medio);
+    }
+
+    .dropdown-link::after {
+      content: " ▾";
+      font-size: 0.75rem;
+      color: var(--azul-medio);
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 140%;
+      left: 0;
+      width: 315px;
+      background: var(--blanco);
+      border: 1px solid var(--gris-borde);
+      box-shadow: var(--shadow);
+      border-radius: 14px;
+      padding: 10px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: 0.2s ease;
+      z-index: 1002;
+    }
+
+    .nav-menu li:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 12px 14px;
+      border-radius: 10px;
+      color: var(--negro);
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .dropdown a:hover,
+    .dropdown a.active {
+      background: var(--gris-fondo);
+      color: var(--azul-principal);
+    }
+
+    .btn-cotizar {
+      background: var(--azul-principal);
+      color: var(--blanco) !important;
+      padding: 12px 18px;
+      border-radius: 999px;
+      box-shadow: 0 8px 20px rgba(11, 74, 120, 0.22);
+    }
+
+    .btn-cotizar:hover {
+      background: var(--azul-oscuro);
+      color: var(--blanco) !important;
+    }
+
+    .mobile-toggle {
+      display: none;
+      background: var(--azul-principal);
+      color: var(--blanco);
+      border: none;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    .page-hero {
+      background:
+        linear-gradient(105deg, rgba(5, 38, 60, 0.97) 0%, rgba(7, 50, 79, 0.92) 48%, rgba(28, 120, 176, 0.66) 100%),
+        url("/assets/fondo1.png");
+      background-size: cover;
+      background-position: center;
+      color: var(--blanco);
+      padding: 88px 0 72px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-hero::before {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: rgba(67, 191, 208, 0.14);
+      right: -130px;
+      top: -120px;
+    }
+
+    .page-hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(255,255,255,0.16) 1px, transparent 1px);
+      background-size: 26px 26px;
+      opacity: 0.14;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 930px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.22);
+      color: #EAFBFF;
+      font-weight: 800;
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+    }
+
+    .page-hero h1 {
+      font-size: clamp(2.2rem, 5vw, 4.7rem);
+      line-height: 1.05;
+      letter-spacing: -1px;
+      margin-bottom: 18px;
+    }
+
+    .page-hero h1 span {
+      color: var(--celeste);
+    }
+
+    .page-hero p {
+      color: #E9F6FB;
+      font-size: 1.1rem;
+      max-width: 790px;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .breadcrumb {
+      background: var(--blanco);
+      border-bottom: 1px solid var(--gris-borde);
+      padding: 16px 0;
+      font-size: 0.92rem;
+      color: var(--gris-texto);
+    }
+
+    .breadcrumb a {
+      color: var(--azul-principal);
+      font-weight: 800;
+    }
+
+    .section {
+      padding: 74px 0;
+    }
+
+    .section-light {
+      background: var(--gris-fondo);
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 34px;
+      align-items: start;
+    }
+
+    .section-title {
+      max-width: 850px;
+      margin-bottom: 34px;
+    }
+
+    .section-title.center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-title span {
+      display: inline-block;
+      color: var(--azul-medio);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.82rem;
+      margin-bottom: 8px;
+    }
+
+    .section-title h2 {
+      color: var(--azul-oscuro);
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      line-height: 1.12;
+      margin-bottom: 12px;
+    }
+
+    .section-title p {
+      color: var(--gris-texto);
+      font-size: 1.02rem;
+    }
+
+    .contact-card,
+    .info-card {
+      background: var(--blanco);
+      border: 1px solid var(--gris-borde);
+      border-radius: 26px;
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-card h2,
+    .info-card h2 {
+      color: var(--azul-oscuro);
+      font-size: clamp(1.55rem, 3vw, 2.25rem);
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .contact-card p,
+    .info-card p {
+      color: var(--gris-texto);
+      margin-bottom: 20px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .form-group {
+      display: grid;
+      gap: 7px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      color: var(--azul-oscuro);
+      font-weight: 900;
+      font-size: 0.92rem;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid var(--gris-borde);
+      border-radius: 14px;
+      padding: 13px 14px;
+      font: inherit;
+      color: var(--negro);
+      background: var(--gris-fondo);
+      outline: none;
+      transition: 0.2s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--azul-medio);
+      box-shadow: 0 0 0 4px rgba(67, 191, 208, 0.16);
+      background: var(--blanco);
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .form-note {
+      background: #EAF7FD;
+      border-left: 5px solid var(--celeste);
+      border-radius: 14px;
+      padding: 14px 16px;
+      color: var(--azul-oscuro);
+      font-weight: 700;
+      font-size: 0.92rem;
+      margin: 18px 0;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .contact-item {
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      gap: 14px;
+      align-items: start;
+      background: var(--gris-fondo);
+      border: 1px solid var(--gris-borde);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      background: #EAF7FD;
+      color: var(--azul-medio);
+      font-size: 1.35rem;
+    }
+
+    .contact-item h3 {
+      color: var(--azul-oscuro);
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+    }
+
+    .contact-item p,
+    .contact-item a {
+      color: var(--gris-texto);
+      font-size: 0.96rem;
+      font-weight: 600;
+    }
+
+    .help-box {
+      margin-top: 22px;
+      background:
+        linear-gradient(120deg, rgba(7,50,79,0.96), rgba(11,74,120,0.94));
+      color: var(--blanco);
+      border-radius: 22px;
+      padding: 28px;
+    }
+
+    .help-box h3 {
+      font-size: 1.35rem;
+      margin-bottom: 10px;
+    }
+
+    .help-box p {
+      color: #E9F6FB;
+      margin-bottom: 18px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .service-box {
+      background: var(--blanco);
+      border: 1px solid var(--gris-borde);
+      border-radius: 20px;
+      padding: 22px;
+      transition: 0.2s ease;
+    }
+
+    .service-box:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+      border-color: #B9D9E8;
+    }
+
+    .service-box strong {
+      display: block;
+      color: var(--azul-oscuro);
+      margin-bottom: 8px;
+      font-size: 1.04rem;
+    }
+
+    .service-box p {
+      color: var(--gris-texto);
+      font-size: 0.94rem;
+    }
+
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .step {
+      background: var(--blanco);
+      border: 1px solid var(--gris-borde);
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .step strong {
+      width: 36px;
+      height: 36px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--azul-principal);
+      color: var(--blanco);
+      margin-bottom: 12px;
+    }
+
+    .step h3 {
+      color: var(--azul-oscuro);
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      color: var(--gris-texto);
+      font-size: 0.94rem;
+    }
+
+    .cta {
+      background:
+        linear-gradient(115deg, rgba(5,38,60,0.98), rgba(28,120,176,0.88)),
+        url("/assets/fondo1.png");
+      background-size: cover;
+      background-position: center;
+      color: var(--blanco);
+      padding: 74px 0;
+    }
+
+    .cta-box {
+      max-width: 850px;
+    }
+
+    .cta h2 {
+      font-size: clamp(1.9rem, 5vw, 3.6rem);
+      line-height: 1.08;
+      margin-bottom: 16px;
+    }
+
+    .cta p {
+      color: #E9F6FB;
+      font-size: 1.08rem;
+      margin-bottom: 26px;
+    }
+
+    footer {
+      background: var(--negro);
+      color: var(--blanco);
+      padding: 46px 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 0.8fr;
+      gap: 28px;
+    }
+
+    footer h3,
+    footer h4 {
+      margin-bottom: 12px;
+    }
+
+    footer p,
+    footer a {
+      color: #C9D8DF;
+      font-size: 0.95rem;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      margin-top: 28px;
+      padding-top: 18px;
+      color: #A9BBC5;
+      font-size: 0.9rem;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      background: var(--whatsapp);
+      color: var(--blanco);
+      padding: 13px 18px;
+      border-radius: 999px;
+      font-weight: 900;
+      box-shadow: 0 12px 34px rgba(0,0,0,0.24);
+      z-index: 1003;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .floating-whatsapp img {
+      width: 22px;
+      height: 22px;
+    }
+
+    @media (max-width: 980px) {
+      .mobile-toggle {
+        display: block;
+      }
+
+      .nav-menu {
+        position: absolute;
+        top: 82px;
+        left: 0;
+        right: 0;
+        background: var(--blanco);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 12px 5%;
+        border-bottom: 1px solid var(--gris-borde);
+        display: none;
+      }
+
+      .nav-menu.active {
+        display: flex;
+      }
+
+      .nav-menu > li {
+        border-bottom: 1px solid var(--gris-borde);
+        padding: 12px 0;
+      }
+
+      .dropdown {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        width: 100%;
+        border: none;
+        padding: 8px 0 0;
+        display: none;
+      }
+
+      .has-dropdown.open .dropdown {
+        display: block;
+      }
+
+      .btn-cotizar {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 6px;
+      }
+
+      .contact-layout,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-grid,
+      .process {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .logo img {
+        height: 42px;
+      }
+
+      .page-hero {
+        padding: 60px 0 50px;
+      }
+
+      .section {
+        padding: 56px 0;
+      }
+
+      .hero-actions,
+      .contact-actions {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .contact-card,
+      .info-card {
+        padding: 26px;
+      }
+
+      .form-grid,
+      .service-grid,
+      .process {
+        grid-template-columns: 1fr;
+      }
+
+      .floating-whatsapp {
+        left: 14px;
+        right: 14px;
+        justify-content: center;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contáctanos | ICASERG SAC",
+    "url": "https://www.icaserg.com/contacto/",
+    "description": "Página de contacto de ICASERG SAC para cotizar servicios de instalación, mantenimiento y reparación de chillers y aire acondicionado para empresas.",
+    "publisher": {
+      "@type": "HVACBusiness",
+      "name": "ICASERG SAC",
+      "url": "https://www.icaserg.com/",
+      "telephone": "+51 930 390 009",
+      "email": "contacto@icaserg.com",
+      "areaServed": ["Lima", "Perú"]
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a href="/" class="logo" aria-label="Ir al inicio">
+        <img src="/assets/logoicaserg.png" alt="Logo ICASERG SAC">
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
+        ☰
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/nosotros/">Nosotros</a></li>
+
+        <li class="has-dropdown">
+          <a href="#" class="dropdown-link">Servicios</a>
+          <div class="dropdown">
+            <a href="/servicios/instalacion-de-chillers/">Instalación de chillers</a>
+            <a href="/servicios/mantenimiento-de-chillers/">Mantenimiento de chillers</a>
+            <a href="/servicios/reparacion-de-chillers/">Reparación de chillers</a>
+            <a href="/servicios/aire-acondicionado-para-empresas/">Aire acondicionado para empresas</a>
+            <a href="/servicios/contratos-de-mantenimiento/">Contratos de mantenimiento</a>
+          </div>
+        </li>
+
+        <li><a href="/trabajos-realizados/">Trabajos realizados</a></li>
+
+        <li class="has-dropdown">
+          <a href="#" class="dropdown-link">Recursos</a>
+          <div class="dropdown">
+            <a href="/recursos/preguntas-frecuentes/">Preguntas frecuentes</a>
+            <a href="/recursos/senales-de-falla-en-un-chiller/">Señales de falla en un chiller</a>
+            <a href="/recursos/datos-para-cotizar/">Datos para cotizar</a>
+          </div>
+        </li>
+
+        <li><a class="active" href="/contacto/">Contáctanos</a></li>
+        <li><a class="btn-cotizar" href="/contacto/">Cotizar</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="eyebrow">Atención para empresas privadas</div>
+
+        <h1>
+          Cotiza un servicio de <span>climatización empresarial</span>
+        </h1>
+
+        <p>
+          Escríbenos para coordinar instalación, mantenimiento o reparación de chillers
+          y aire acondicionado comercial/industrial en Lima y provincias.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-whatsapp" href="https://wa.me/51930390009?text=Hola%20ICASERG%20SAC%2C%20quiero%20cotizar%20un%20servicio%20de%20climatizaci%C3%B3n%20para%20mi%20empresa." target="_blank">
+            <img src="/assets/whatsapp.png" alt="WhatsApp">
+            Escribir por WhatsApp
+          </a>
+
+          <a class="btn btn-light" href="#formulario">
+            Completar formulario
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="/">Inicio</a> &nbsp;›&nbsp; Contáctanos
+    </div>
+  </div>
+
+  <main>
+
+    <section class="section" id="formulario">
+      <div class="container">
+        <div class="section-title center">
+          <span>Contacto directo</span>
+          <h2>Cuéntanos qué necesita tu empresa</h2>
+          <p>
+            Completa estos datos básicos y el mensaje se abrirá listo en WhatsApp.
+            La idea es hacerlo rápido, simple y sin complicaciones.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+
+          <section class="contact-card">
+            <h2>Solicitar cotización</h2>
+            <p>
+              Elige el servicio, escribe una breve descripción y envía tu consulta directamente por WhatsApp.
+            </p>
+
+            <form id="contactForm">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Ej. Carlos Ramírez" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="empresa">Empresa</label>
+                  <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="telefono">Celular</label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="Ej. 999 999 999" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="ubicacion">Ubicación</label>
+                  <input type="text" id="ubicacion" name="ubicacion" placeholder="Distrito, ciudad o provincia" required>
+                </div>
+
+                <div class="form-group full">
+                  <label for="servicio">Servicio requerido</label>
+                  <select id="servicio" name="servicio" required>
+                    <option value="">Seleccionar servicio</option>
+                    <option value="Instalación de chillers">Instalación de chillers</option>
+                    <option value="Mantenimiento de chillers">Mantenimiento de chillers</option>
+                    <option value="Reparación de chillers">Reparación de chillers</option>
+                    <option value="Aire acondicionado para empresas">Aire acondicionado para empresas</option>
+                    <option value="Contrato de mantenimiento">Contrato de mantenimiento</option>
+                    <option value="Otro servicio de climatización">Otro servicio de climatización</option>
+                  </select>
+                </div>
+
+                <div class="form-group full">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea id="mensaje" name="mensaje" placeholder="Ej. Necesito mantenimiento para un sistema de aire acondicionado en una empresa ubicada en Lima." required></textarea>
+                </div>
+              </div>
+
+              <div class="form-note">
+                No necesitas preparar archivos. Con estos datos iniciales podemos orientarte mejor.
+              </div>
+
+              <div class="contact-actions">
+                <button type="submit" class="btn btn-whatsapp">
+                  <img src="/assets/whatsapp.png" alt="WhatsApp">
+                  Enviar por WhatsApp
+                </button>
+
+                <a class="btn btn-primary" href="mailto:contacto@icaserg.com">
+                  Enviar correo
+                </a>
+              </div>
+            </form>
+          </section>
+
+          <aside class="info-card">
+            <h2>Datos de contacto</h2>
+            <p>
+              También puedes comunicarte directamente por WhatsApp o correo.
+            </p>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="contact-icon">📱</div>
+                <div>
+                  <h3>WhatsApp</h3>
+                  <a href="https://wa.me/51930390009" target="_blank">+51 930 390 009</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div>
+                  <h3>Correo</h3>
+                  <a href="mailto:contacto@icaserg.com">contacto@icaserg.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <h3>Cobertura</h3>
+                  <p>Lima y provincias según coordinación</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">🏢</div>
+                <div>
+                  <h3>Tipo de atención</h3>
+                  <p>Empresas privadas, plantas, oficinas, almacenes y locales comerciales</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="help-box">
+              <h3>Atención empresarial</h3>
+              <p>
+                ICASERG SAC se enfoca en sistemas chiller y aire acondicionado comercial/industrial,
+                no en servicios domésticos ni automotrices.
+              </p>
+
+              <a class="btn btn-light" href="https://wa.me/51930390009?text=Hola%20ICASERG%20SAC%2C%20quiero%20hacer%20una%20consulta%20sobre%20un%20servicio%20para%20mi%20empresa." target="_blank">
+                Consulta rápida
+              </a>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-title center">
+          <span>Servicios que puedes cotizar</span>
+          <h2>Soluciones para climatización empresarial</h2>
+          <p>
+            Selecciona el servicio que más se acerque a la necesidad de tu empresa.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <div class="service-box">
+            <strong>Instalación de chillers</strong>
+            <p>Para empresas que requieren implementar o renovar sistemas chiller.</p>
+          </div>
+
+          <div class="service-box">
+            <strong>Mantenimiento de chillers</strong>
+            <p>Atención preventiva y correctiva para conservar eficiencia y continuidad.</p>
+          </div>
+
+          <div class="service-box">
+            <strong>Reparación de chillers</strong>
+            <p>Diagnóstico y corrección de fallas, alarmas o bajo rendimiento.</p>
+          </div>
+
+          <div class="service-box">
+            <strong>Aire acondicionado para empresas</strong>
+            <p>Instalación, mantenimiento y reparación de sistemas comerciales e industriales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title center">
+          <span>Proceso simple</span>
+          <h2>Cómo coordinamos la atención</h2>
+          <p>
+            Queremos que el primer contacto sea fácil y claro.
+          </p>
+        </div>
+
+        <div class="process">
+          <div class="step">
+            <strong>1</strong>
+            <h3>Envías tu consulta</h3>
+            <p>Nos indicas servicio, empresa y ubicación.</p>
+          </div>
+
+          <div class="step">
+            <strong>2</strong>
+            <h3>Revisamos la necesidad</h3>
+            <p>Identificamos si corresponde instalación, mantenimiento o reparación.</p>
+          </div>
+
+          <div class="step">
+            <strong>3</strong>
+            <h3>Coordinamos detalles</h3>
+            <p>Se define la mejor forma de atención según el caso.</p>
+          </div>
+
+          <div class="step">
+            <strong>4</strong>
+            <h3>Propuesta de servicio</h3>
+            <p>Planteamos el alcance del trabajo para tu empresa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box">
+          <h2>¿Listo para cotizar?</h2>
+          <p>
+            Escríbenos por WhatsApp y cuéntanos qué servicio necesita tu empresa.
+          </p>
+
+          <a class="btn btn-whatsapp" href="https://wa.me/51930390009?text=Hola%20ICASERG%20SAC%2C%20quiero%20cotizar%20un%20servicio%20de%20climatizaci%C3%B3n%20para%20mi%20empresa." target="_blank">
+            <img src="/assets/whatsapp.png" alt="WhatsApp">
+            Cotizar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>ICASERG SAC</h3>
+        <p>
+          Instalación, mantenimiento y reparación de chillers y aire acondicionado
+          comercial/industrial para empresas privadas en Lima y provincias.
+        </p>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <p>WhatsApp: <a href="https://wa.me/51930390009" target="_blank">+51 930 390 009</a></p>
+        <p>Correo: <a href="mailto:contacto@icaserg.com">contacto@icaserg.com</a></p>
+      </div>
+
+      <div>
+        <h4>Servicios</h4>
+        <p>Instalación de chillers</p>
+        <p>Mantenimiento de chillers</p>
+        <p>Reparación de chillers</p>
+        <p>Aire acondicionado para empresas</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 ICASERG SAC. Climatización para empresas privadas.</p>
+    </div>
+  </footer>
+
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/51930390009?text=Hola%20ICASERG%20SAC%2C%20quiero%20cotizar%20un%20servicio%20de%20climatizaci%C3%B3n%20para%20mi%20empresa."
+    target="_blank"
+    aria-label="Cotizar por WhatsApp"
+  >
+    <img src="/assets/whatsapp.png" alt="WhatsApp">
+    WhatsApp
+  </a>
+
+  <script>
+    const mobileToggle = document.getElementById("mobileToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    mobileToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+
+    const dropdownLinks = document.querySelectorAll(".dropdown-link");
+
+    dropdownLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        const parent = link.closest(".has-dropdown");
+
+        if (window.innerWidth <= 980) {
+          parent.classList.toggle("open");
+        }
+      });
+    });
+
+    const contactForm = document.getElementById("contactForm");
+
+    contactForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const nombre = document.getElementById("nombre").value.trim();
+      const empresa = document.getElementById("empresa").value.trim();
+      const telefono = document.getElementById("telefono").value.trim();
+      const ubicacion = document.getElementById("ubicacion").value.trim();
+      const servicio = document.getElementById("servicio").value.trim();
+      const mensaje = document.getElementById("mensaje").value.trim();
+
+      const texto =
+        "Hola ICASERG SAC, quiero cotizar un servicio para mi empresa.%0A%0A" +
+        "Nombre: " + encodeURIComponent(nombre) + "%0A" +
+        "Empresa: " + encodeURIComponent(empresa) + "%0A" +
+        "Celular: " + encodeURIComponent(telefono) + "%0A" +
+        "Ubicación: " + encodeURIComponent(ubicacion) + "%0A" +
+        "Servicio requerido: " + encodeURIComponent(servicio) + "%0A" +
+        "Mensaje: " + encodeURIComponent(mensaje);
+
+      window.open("https://wa.me/51930390009?text=" + texto, "_blank");
+    });
+  </script>
+
+</body>
+</html>
