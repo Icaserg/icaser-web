@@ -13,19 +13,20 @@
 
   <meta
     name="keywords"
-    content="ICASERG SAC, climatización para empresas, chillers, aire acondicionado para empresas, mantenimiento de chillers, reparación de chillers, instalación de aire acondicionado, Lima, Perú"
+    content="ICASERG SAC, nosotros ICASERG, empresa de climatización, chillers para empresas, aire acondicionado para empresas, mantenimiento de chillers, Lima, Perú"
   />
 
   <meta name="author" content="ICASERG SAC" />
   <meta name="robots" content="index, follow" />
 
   <link rel="canonical" href="https://www.icaserg.com/nosotros/" />
-  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
 
   <meta property="og:title" content="Nosotros | ICASERG SAC" />
   <meta property="og:description" content="Más de 20 años brindando soluciones de climatización para empresas privadas." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.icaserg.com/nosotros/" />
+  <meta property="og:image" content="https://www.icaserg.com/assets/fondo1.png" />
 
   <style>
     :root {
@@ -79,7 +80,7 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
+      gap: 9px;
       padding: 14px 22px;
       border-radius: 999px;
       font-weight: 900;
@@ -87,6 +88,11 @@
       transition: 0.2s ease;
       cursor: pointer;
       border: none;
+    }
+
+    .btn img {
+      width: 20px;
+      height: 20px;
     }
 
     .btn-primary {
@@ -97,6 +103,17 @@
 
     .btn-primary:hover {
       background: var(--azul-profundo);
+      transform: translateY(-2px);
+    }
+
+    .btn-whatsapp {
+      background: var(--whatsapp);
+      color: var(--blanco);
+      box-shadow: 0 10px 26px rgba(37, 211, 102, 0.25);
+    }
+
+    .btn-whatsapp:hover {
+      filter: brightness(0.96);
       transform: translateY(-2px);
     }
 
@@ -169,7 +186,7 @@
       position: absolute;
       top: 140%;
       left: 0;
-      width: 305px;
+      width: 315px;
       background: var(--blanco);
       border: 1px solid var(--gris-borde);
       box-shadow: var(--shadow);
@@ -226,13 +243,16 @@
       cursor: pointer;
     }
 
-    /* PAGE HERO */
+    /* HERO */
 
     .page-hero {
       background:
-        linear-gradient(110deg, rgba(5, 38, 60, 0.97), rgba(7, 50, 79, 0.92), rgba(28, 120, 176, 0.76));
+        linear-gradient(105deg, rgba(5, 38, 60, 0.97) 0%, rgba(7, 50, 79, 0.92) 48%, rgba(28, 120, 176, 0.66) 100%),
+        url("/assets/fondo1.png");
+      background-size: cover;
+      background-position: center;
       color: var(--blanco);
-      padding: 78px 0 64px;
+      padding: 88px 0 72px;
       position: relative;
       overflow: hidden;
     }
@@ -240,12 +260,12 @@
     .page-hero::before {
       content: "";
       position: absolute;
-      width: 380px;
-      height: 380px;
+      width: 420px;
+      height: 420px;
       border-radius: 50%;
-      background: rgba(67, 191, 208, 0.15);
+      background: rgba(67, 191, 208, 0.14);
+      right: -130px;
       top: -120px;
-      right: -100px;
     }
 
     .page-hero::after {
@@ -261,7 +281,7 @@
     .hero-inner {
       position: relative;
       z-index: 1;
-      max-width: 880px;
+      max-width: 900px;
     }
 
     .eyebrow {
@@ -277,7 +297,7 @@
     }
 
     .page-hero h1 {
-      font-size: clamp(2.1rem, 5vw, 4.5rem);
+      font-size: clamp(2.2rem, 5vw, 4.7rem);
       line-height: 1.05;
       letter-spacing: -1px;
       margin-bottom: 18px;
@@ -290,7 +310,14 @@
     .page-hero p {
       color: #E9F6FB;
       font-size: 1.1rem;
-      max-width: 760px;
+      max-width: 780px;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
     }
 
     .breadcrumb {
@@ -564,7 +591,10 @@
 
     .cta {
       background:
-        linear-gradient(115deg, rgba(5,38,60,0.98), rgba(28,120,176,0.9));
+        linear-gradient(115deg, rgba(5,38,60,0.98), rgba(28,120,176,0.88)),
+        url("/assets/fondo1.png");
+      background-size: cover;
+      background-position: center;
       color: var(--blanco);
       padding: 74px 0;
     }
@@ -624,11 +654,19 @@
       bottom: 18px;
       background: var(--whatsapp);
       color: var(--blanco);
-      padding: 14px 18px;
+      padding: 13px 18px;
       border-radius: 999px;
       font-weight: 900;
       box-shadow: 0 12px 34px rgba(0,0,0,0.24);
       z-index: 1003;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .floating-whatsapp img {
+      width: 22px;
+      height: 22px;
     }
 
     /* RESPONSIVE */
@@ -673,7 +711,7 @@
         display: none;
       }
 
-      .nav-menu li:hover .dropdown {
+      .has-dropdown.open .dropdown {
         display: block;
       }
 
@@ -702,7 +740,7 @@
       }
 
       .page-hero {
-        padding: 58px 0 48px;
+        padding: 60px 0 50px;
       }
 
       .section {
@@ -719,6 +757,10 @@
         padding: 28px;
       }
 
+      .hero-actions {
+        flex-direction: column;
+      }
+
       .btn {
         width: 100%;
       }
@@ -726,7 +768,7 @@
       .floating-whatsapp {
         left: 14px;
         right: 14px;
-        text-align: center;
+        justify-content: center;
       }
     }
   </style>
@@ -734,27 +776,17 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HVACBusiness",
-    "name": "ICASERG SAC",
-    "url": "https://www.icaserg.com/",
-    "telephone": "+51 930 390 009",
-    "email": "contacto@icaserg.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Lima",
-      "addressCountry": "PE"
-    },
-    "areaServed": [
-      {
-        "@type": "AdministrativeArea",
-        "name": "Lima"
-      },
-      {
-        "@type": "Country",
-        "name": "Perú"
-      }
-    ],
-    "description": "ICASERG SAC brinda instalación, mantenimiento y reparación de chillers y aire acondicionado comercial e industrial para empresas privadas en Lima y provincias."
+    "@type": "AboutPage",
+    "name": "Nosotros | ICASERG SAC",
+    "url": "https://www.icaserg.com/nosotros/",
+    "description": "Conoce a ICASERG SAC, empresa con más de 20 años de experiencia en instalación, mantenimiento y reparación de chillers y aire acondicionado para empresas privadas.",
+    "publisher": {
+      "@type": "HVACBusiness",
+      "name": "ICASERG SAC",
+      "url": "https://www.icaserg.com/",
+      "telephone": "+51 930 390 009",
+      "email": "contacto@icaserg.com"
+    }
   }
   </script>
 </head>
@@ -764,7 +796,7 @@
   <header>
     <div class="container navbar">
       <a href="/" class="logo" aria-label="Ir al inicio">
-        <img src="../assets/logoicaserg.png" alt="Logo ICASERG SAC">
+        <img src="/assets/logoicaserg.png" alt="Logo ICASERG SAC">
       </a>
 
       <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
@@ -775,25 +807,25 @@
         <li><a href="/">Inicio</a></li>
         <li><a class="active" href="/nosotros/">Nosotros</a></li>
 
-        <li>
+        <li class="has-dropdown">
           <a href="#" class="dropdown-link">Servicios</a>
           <div class="dropdown">
-            <a href="/instalacion-de-chillers/">Instalación de chillers</a>
-            <a href="/mantenimiento-de-chillers/">Mantenimiento de chillers</a>
-            <a href="/reparacion-de-chillers/">Reparación de chillers</a>
-            <a href="/aire-acondicionado-para-empresas/">Aire acondicionado para empresas</a>
-            <a href="/contratos-de-mantenimiento/">Contratos de mantenimiento</a>
+            <a href="/servicios/instalacion-de-chillers/">Instalación de chillers</a>
+            <a href="/servicios/mantenimiento-de-chillers/">Mantenimiento de chillers</a>
+            <a href="/servicios/reparacion-de-chillers/">Reparación de chillers</a>
+            <a href="/servicios/aire-acondicionado-para-empresas/">Aire acondicionado para empresas</a>
+            <a href="/servicios/contratos-de-mantenimiento/">Contratos de mantenimiento</a>
           </div>
         </li>
 
-        <li><a href="/proyectos/">Proyectos</a></li>
+        <li><a href="/trabajos-realizados/">Trabajos realizados</a></li>
 
-        <li>
+        <li class="has-dropdown">
           <a href="#" class="dropdown-link">Recursos</a>
           <div class="dropdown">
-            <a href="/preguntas-frecuentes/">Preguntas frecuentes</a>
-            <a href="/senales-de-falla-en-un-chiller/">Señales de falla en un chiller</a>
-            <a href="/datos-para-cotizar/">Datos para cotizar</a>
+            <a href="/recursos/preguntas-frecuentes/">Preguntas frecuentes</a>
+            <a href="/recursos/senales-de-falla-en-un-chiller/">Señales de falla en un chiller</a>
+            <a href="/recursos/datos-para-cotizar/">Datos para cotizar</a>
           </div>
         </li>
 
@@ -807,11 +839,26 @@
     <div class="container">
       <div class="hero-inner">
         <div class="eyebrow">Sobre ICASERG SAC</div>
-        <h1>Más de 20 años brindando <span>climatización para empresas</span></h1>
+
+        <h1>
+          Más de 20 años brindando <span>climatización para empresas</span>
+        </h1>
+
         <p>
           Somos una empresa orientada a la instalación, mantenimiento y reparación de chillers
           y aire acondicionado comercial/industrial para empresas privadas en Lima y provincias.
         </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-whatsapp" href="https://wa.me/51930390009?text=Hola%20ICASERG%20SAC%2C%20quiero%20cotizar%20un%20servicio%20de%20climatizaci%C3%B3n%20para%20mi%20empresa." target="_blank">
+            <img src="/assets/whatsapp.png" alt="WhatsApp">
+            Cotizar por WhatsApp
+          </a>
+
+          <a class="btn btn-light" href="#contenido">
+            Conocer la empresa
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -822,7 +869,7 @@
     </div>
   </div>
 
-  <main>
+  <main id="contenido">
 
     <section class="section">
       <div class="container about-grid">
@@ -1010,8 +1057,9 @@
             de chillers y aire acondicionado para empresas privadas.
           </p>
 
-          <a class="btn btn-light" href="/contacto/">
-            Cotizar ahora
+          <a class="btn btn-whatsapp" href="https://wa.me/51930390009?text=Hola%20ICASERG%20SAC%2C%20quiero%20cotizar%20un%20servicio%20para%20mi%20empresa." target="_blank">
+            <img src="/assets/whatsapp.png" alt="WhatsApp">
+            Cotizar por WhatsApp
           </a>
         </div>
       </div>
@@ -1051,9 +1099,11 @@
 
   <a
     class="floating-whatsapp"
-    href="https://wa.me/51930390009?text=Hola%20ICASERG%20SAC%2C%20quiero%20informaci%C3%B3n%20sobre%20servicios%20de%20climatizaci%C3%B3n%20para%20mi%20empresa."
+    href="https://wa.me/51930390009?text=Hola%20ICASERG%20SAC%2C%20quiero%20cotizar%20un%20servicio%20de%20climatizaci%C3%B3n%20para%20mi%20empresa."
     target="_blank"
+    aria-label="Cotizar por WhatsApp"
   >
+    <img src="/assets/whatsapp.png" alt="WhatsApp">
     WhatsApp
   </a>
 
@@ -1063,6 +1113,20 @@
 
     mobileToggle.addEventListener("click", () => {
       navMenu.classList.toggle("active");
+    });
+
+    const dropdownLinks = document.querySelectorAll(".dropdown-link");
+
+    dropdownLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        const parent = link.closest(".has-dropdown");
+
+        if (window.innerWidth <= 980) {
+          parent.classList.toggle("open");
+        }
+      });
     });
   </script>
 
