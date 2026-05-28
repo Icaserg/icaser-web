@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Trabajos Realizados | ICASERG SAC</title>
+
+  <meta
+    name="description"
+    content="Conoce trabajos realizados por ICASERG SAC en instalación, mantenimiento y reparación de chillers y aire acondicionado para empresas privadas en Lima y provincias."
+  />
+
+  <meta
+    name="keywords"
+    content="trabajos realizados ICASERG, proyectos de climatización, mantenimiento de chillers, reparación de chillers, instalación de chillers, aire acondicionado para empresas, Lima, Perú"
+  />
+
+  <meta name="author" content="ICASERG SAC" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://www.icaserg.com/trabajos-realizados/" />
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+
+  <meta property="og:title" content="Trabajos Realizados | ICASERG SAC" />
+  <meta property="og:description" content="Servicios técnicos realizados en chillers y aire acondicionado para empresas privadas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.icaserg.com/trabajos-realizados/" />
+
+  <style>
+    :root {
+      --azul-oscuro: #07324F;
+      --azul-profundo: #05263C;
+      --azul-principal: #0B4A78;
+      --azul-medio: #1C78B0;
+      --celeste: #43BFD0;
+      --gris-fondo: #F5F8FA;
+      --gris-borde: #DCE2E5;
+      --gris-texto: #5F6F7A;
+      --negro: #1F2529;
+      --blanco: #FFFFFF;
+      --whatsapp: #25D366;
+      --shadow: 0 18px 45px rgba(7, 50, 79, 0.16);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--negro);
+      background: var(--blanco);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: 0 auto;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: 900;
+      font-size: 0.96rem;
+      transition: 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--azul-principal);
+      color: var(--blanco);
+      box-shadow: 0 10px 26px rgba(11, 74, 120, 0.28);
+    }
+
+    .btn-primary:hover {
+      background: var(--azul-profundo);
+      transform: translateY(-2px);
+    }
+
+    .btn-light {
+      background: var(--blanco);
+      color: var(--azul-oscuro);
+    }
+
+    .btn-light:hover {
+      background: #EAF7FD;
+      transform: translateY(-2px);
+    }
+
+    /* HEADER */
+
+    header {
+      background: rgba(255, 255, 255, 0.98);
+      border-bottom: 1px solid var(--gris-borde);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    .navbar {
+      height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .logo img {
+      height: 54px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+      font-size: 0.95rem;
+      font-weight: 800;
+    }
+
+    .nav-menu > li {
+      position: relative;
+    }
+
+    .nav-menu a {
+      color: var(--negro);
+      white-space: nowrap;
+      transition: 0.2s ease;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a.active {
+      color: var(--azul-medio);
+    }
+
+    .dropdown-link::after {
+      content: " ▾";
+      font-size: 0.75rem;
+      color: var(--azul-medio);
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 140%;
+      left: 0;
+      width: 315px;
+      background: var(--blanco);
+      border: 1px solid var(--gris-borde);
+      box-shadow: var(--shadow);
+      border-radius: 14px;
+      padding: 10px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: 0.2s ease;
+      z-index: 1002;
+    }
+
+    .nav-menu li:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 12px 14px;
+      border-radius: 10px;
+      color: var(--negro);
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .dropdown a:hover {
+      background: var(--gris-fondo);
+      color: var(--azul-principal);
+    }
+
+    .btn-cotizar {
+      background: var(--azul-principal);
+      color: var(--blanco) !important;
+      padding: 12px 18px;
+      border-radius: 999px;
+      box-shadow: 0 8px 20px rgba(11, 74, 120, 0.22);
+    }
+
+    .btn-cotizar:hover {
+      background: var(--azul-oscuro);
+      color: var(--blanco) !important;
+    }
+
+    .mobile-toggle {
+      display: none;
+      background: var(--azul-principal);
+      color: var(--blanco);
+      border: none;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    /* PAGE HERO */
+
+    .page-hero {
+      background:
+        linear-gradient(110deg, rgba(5, 38, 60, 0.97), rgba(7, 50, 79, 0.92), rgba(28, 120, 176, 0.74)),
+        url("/assets/trabajos-realizados-hero.jpg");
+      background-size: cover;
+      background-position: center;
+      color: var(--blanco);
+      padding: 82px 0 66px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-hero::before {
+      content: "";
+      position: absolute;
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      background: rgba(67, 191, 208, 0.15);
+      top: -120px;
+      right: -100px;
+    }
+
+    .page-hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(255,255,255,0.16) 1px, transparent 1px);
+      background-size: 26px 26px;
+      opacity: 0.14;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.22);
+      color: #EAFBFF;
+      font-weight: 800;
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+    }
+
+    .page-hero h1 {
+      font-size: clamp(2.1rem, 5vw, 4.6rem);
+      line-height: 1.05;
+      letter-spacing: -1px;
+      margin-bottom: 18px;
+    }
+
+    .page-hero h1 span {
+      color: var(--celeste);
+    }
+
+    .page-hero p {
+      color: #E9F6FB;
+      font-size: 1.1rem;
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .breadcrumb {
+      background: var(--blanco);
+      border-bottom: 1px solid var(--gris-borde);
+      padding: 16px 0;
+      font-size: 0.92rem;
+      color: var(--gris-texto);
+    }
+
+    .breadcrumb a {
+      color: var(--azul-principal);
+      font-weight: 800;
+    }
+
+    /* CONTENT */
+
+    .section {
+      padding: 74px 0;
+    }
+
+    .section-light {
+      background: var(--gris-fondo);
+    }
+
+    .section-title {
+      max-width: 830px;
+      margin-bottom: 34px;
+    }
+
+    .section-title.center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-title span {
+      display: inline-block;
+      color: var(--azul-medio);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.82rem;
+      margin-bottom: 8px;
+    }
+
+    .section-title h2 {
+      color: var(--azul-oscuro);
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      line-height: 1.12;
+      margin-bottom: 12px;
+    }
+
+    .section-title p {
+      color: var(--gris-texto);
+      font-size: 1.02rem;
+    }
+
+    .filters {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 34px;
+    }
+
+    .filter {
+      border: 1px solid var(--gris-borde);
+      background: var(--blanco);
+      color: var(--azul-oscuro);
+      padding: 10px 15px;
+      border-radius: 999px;
+      font-weight: 900;
+      font-size: 0.9rem;
+    }
+
+    .filter.active {
+      background: var(--azul-principal);
+      color: var(--blanco);
+      border-color: var(--azul-principal);
+    }
+
+    .works-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .work-card {
+      background: var(--blanco);
+      border: 1px solid var(--gris-borde);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 12px 34px rgba(7, 50, 79, 0.08);
+      transition: 0.2s ease;
+    }
+
+    .work-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+      border-color: #B9D9E8;
+    }
+
+    .work-photo {
+      min-height: 230px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      padding: 18px;
+      color: var(--blanco);
+    }
+
+    .work-photo::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(5, 38, 60, 0.88), rgba(5, 38, 60, 0.12));
+    }
+
+    .work-photo span {
+      position: relative;
+      z-index: 1;
+      background: rgba(67, 191, 208, 0.9);
+      color: var(--azul-oscuro);
+      font-weight: 900;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 7px 10px;
+      border-radius: 999px;
+    }
+
+    .photo-1 {
+      background-image:
+        linear-gradient(135deg, rgba(7,50,79,0.15), rgba(67,191,208,0.20)),
+        url("/assets/trabajo-chiller-01.jpg");
+      background-color: #0B4A78;
+    }
+
+    .photo-2 {
+      background-image:
+        linear-gradient(135deg, rgba(7,50,79,0.15), rgba(67,191,208,0.20)),
+        url("/assets/trabajo-chiller-02.jpg");
+      background-color: #07324F;
+    }
+
+    .photo-3 {
+      background-image:
+        linear-gradient(135deg, rgba(7,50,79,0.15), rgba(67,191,208,0.20)),
+        url("/assets/trabajo-aire-01.jpg");
+      background-color: #1C78B0;
+    }
+
+    .photo-4 {
+      background-image:
+        linear-gradient(135deg, rgba(7,50,79,0.15), rgba(67,191,208,0.20)),
+        url("/assets/trabajo-mantenimiento-01.jpg");
+      background-color: #0B4A78;
+    }
+
+    .photo-5 {
+      background-image:
+        linear-gradient(135deg, rgba(7,50,79,0.15), rgba(67,191,208,0.20)),
+        url("/assets/trabajo-planta-01.jpg");
+      background-color: #07324F;
+    }
+
+    .photo-6 {
+      background-image:
+        linear-gradient(135deg, rgba(7,50,79,0.15), rgba(67,191,208,0.20)),
+        url("/assets/trabajo-diagnostico-01.jpg");
+      background-color: #1C78B0;
+    }
+
+    .work-body {
+      padding: 24px;
+    }
+
+    .work-body h3 {
+      color: var(--azul-oscuro);
+      font-size: 1.2rem;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+
+    .work-body p {
+      color: var(--gris-texto);
+      font-size: 0.96rem;
+      margin-bottom: 16px;
+    }
+
+    .work-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .work-meta small {
+      background: var(--gris-fondo);
+      border: 1px solid var(--gris-borde);
+      color: var(--azul-oscuro);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-weight: 800;
+      font-size: 0.78rem;
+    }
+
+    .note-box {
+      margin-top: 38px;
+      background: var(--gris-fondo);
+      border-left: 6px solid var(--celeste);
+      border-radius: 18px;
+      padding: 26px;
+    }
+
+    .note-box h3 {
+      color: var(--azul-oscuro);
+      margin-bottom: 8px;
+    }
+
+    .note-box p {
+      color: var(--gris-texto);
+    }
+
+    .impact {
+      background:
+        linear-gradient(120deg, rgba(7,50,79,0.96), rgba(11,74,120,0.94));
+      color: var(--blanco);
+      border-radius: 28px;
+      padding: 44px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 34px;
+      align-items: center;
+      box-shadow: var(--shadow);
+    }
+
+    .impact h2 {
+      font-size: clamp(1.7rem, 4vw, 2.8rem);
+      line-height: 1.12;
+      margin-bottom: 14px;
+    }
+
+    .impact p {
+      color: #E9F6FB;
+    }
+
+    .impact-list {
+      display: grid;
+      gap: 13px;
+      list-style: none;
+    }
+
+    .impact-list li {
+      display: flex;
+      gap: 10px;
+      color: #F2FBFF;
+      font-weight: 700;
+    }
+
+    .impact-list li::before {
+      content: "✓";
+      color: var(--celeste);
+      font-weight: 900;
+    }
+
+    .cta {
+      background:
+        linear-gradient(115deg, rgba(5,38,60,0.98), rgba(28,120,176,0.9));
+      color: var(--blanco);
+      padding: 74px 0;
+    }
+
+    .cta-box {
+      max-width: 850px;
+    }
+
+    .cta h2 {
+      font-size: clamp(1.9rem, 5vw, 3.6rem);
+      line-height: 1.08;
+      margin-bottom: 16px;
+    }
+
+    .cta p {
+      color: #E9F6FB;
+      font-size: 1.08rem;
+      margin-bottom: 26px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--negro);
+      color: var(--blanco);
+      padding: 46px 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 0.8fr;
+      gap: 28px;
+    }
+
+    footer h3,
+    footer h4 {
+      margin-bottom: 12px;
+    }
+
+    footer p,
+    footer a {
+      color: #C9D8DF;
+      font-size: 0.95rem;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      margin-top: 28px;
+      padding-top: 18px;
+      color: #A9BBC5;
+      font-size: 0.9rem;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      background: var(--whatsapp);
+      color: var(--blanco);
+      padding: 14px 18px;
+      border-radius: 999px;
+      font-weight: 900;
+      box-shadow: 0 12px 34px rgba(0,0,0,0.24);
+      z-index: 1003;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 980px) {
+      .mobile-toggle {
+        display: block;
+      }
+
+      .nav-menu {
+        position: absolute;
+        top: 82px;
+        left: 0;
+        right: 0;
+        background: var(--blanco);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 12px 5%;
+        border-bottom: 1px solid var(--gris-borde);
+        display: none;
+      }
+
+      .nav-menu.active {
+        display: flex;
+      }
+
+      .nav-menu > li {
+        border-bottom: 1px solid var(--gris-borde);
+        padding: 12px 0;
+      }
+
+      .dropdown {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        width: 100%;
+        border: none;
+        padding: 8px 0 0;
+        display: none;
+      }
+
+      .nav-menu li:hover .dropdown {
+        display: block;
+      }
+
+      .btn-cotizar {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 6px;
+      }
+
+      .works-grid,
+      .impact,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .logo img {
+        height: 42px;
+      }
+
+      .page-hero {
+        padding: 58px 0 48px;
+      }
+
+      .section {
+        padding: 56px 0;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .impact {
+        padding: 28px;
+      }
+
+      .floating-whatsapp {
+        left: 14px;
+        right: 14px;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Trabajos realizados por ICASERG SAC",
+    "url": "https://www.icaserg.com/trabajos-realizados/",
+    "description": "Galería y resumen de trabajos realizados en instalación, mantenimiento y reparación de chillers y aire acondicionado para empresas privadas.",
+    "publisher": {
+      "@type": "HVACBusiness",
+      "name": "ICASERG SAC",
+      "url": "https://www.icaserg.com/",
+      "telephone": "+51 930 390 009",
+      "email": "contacto@icaserg.com"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a href="/" class="logo" aria-label="Ir al inicio">
+        <img src="/assets/logoicaserg.png" alt="Logo ICASERG SAC">
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
+        ☰
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/nosotros/">Nosotros</a></li>
+
+        <li>
+          <a href="/servicios/" class="dropdown-link">Servicios</a>
+          <div class="dropdown">
+            <a href="/servicios/">Todos los servicios</a>
+            <a href="/servicios/instalacion-de-chillers/">Instalación de chillers</a>
+            <a href="/servicios/mantenimiento-de-chillers/">Mantenimiento de chillers</a>
+            <a href="/servicios/reparacion-de-chillers/">Reparación de chillers</a>
+            <a href="/servicios/aire-acondicionado-para-empresas/">Aire acondicionado para empresas</a>
+            <a href="/servicios/contratos-de-mantenimiento/">Contratos de mantenimiento</a>
+          </div>
+        </li>
+
+        <li><a class="active" href="/trabajos-realizados/">Trabajos realizados</a></li>
+
+        <li>
+          <a href="/recursos/" class="dropdown-link">Recursos</a>
+          <div class="dropdown">
+            <a href="/recursos/preguntas-frecuentes/">Preguntas frecuentes</a>
+            <a href="/recursos/senales-de-falla-en-un-chiller/">Señales de falla en un chiller</a>
+            <a href="/recursos/datos-para-cotizar/">Datos para cotizar</a>
+          </div>
+        </li>
+
+        <li><a href="/contacto/">Contáctanos</a></li>
+        <li><a class="btn-cotizar" href="/contacto/">Cotizar</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="eyebrow">Experiencia en campo</div>
+        <h1>Trabajos realizados en <span>climatización para empresas</span></h1>
+        <p>
+          Servicios técnicos de instalación, mantenimiento y reparación de chillers
+          y aire acondicionado comercial/industrial para empresas privadas en Lima y provincias.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/contacto/">Cotizar servicio</a>
+          <a class="btn btn-light" href="#galeria">Ver trabajos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="/">Inicio</a> &nbsp;›&nbsp; Trabajos realizados
+    </div>
+  </div>
+
+  <main>
+
+    <section class="section" id="galeria">
+      <div class="container">
+        <div class="section-title center">
+          <span>Galería de servicios</span>
+          <h2>Trabajos técnicos para empresas privadas</h2>
+          <p>
+            Esta sección puede mostrar fotos reales de servicios realizados. Por ahora se deja
+            preparada con categorías profesionales para ordenar los trabajos de ICASERG SAC.
+          </p>
+        </div>
+
+        <div class="filters">
+          <span class="filter active">Todos</span>
+          <span class="filter">Chillers</span>
+          <span class="filter">Mantenimiento</span>
+          <span class="filter">Reparación</span>
+          <span class="filter">Aire acondicionado</span>
+          <span class="filter">Empresas</span>
+        </div>
+
+        <div class="works-grid">
+          <article class="work-card">
+            <div class="work-photo photo-1">
+              <span>Chillers</span>
+            </div>
+            <div class="work-body">
+              <h3>Instalación de sistema chiller</h3>
+              <p>
+                Servicio técnico para empresa privada con necesidad de climatización de uso continuo.
+              </p>
+              <div class="work-meta">
+                <small>Instalación</small>
+                <small>Empresa privada</small>
+                <small>Lima / provincias</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-photo photo-2">
+              <span>Mantenimiento</span>
+            </div>
+            <div class="work-body">
+              <h3>Mantenimiento preventivo de chiller</h3>
+              <p>
+                Revisión técnica, control de funcionamiento y recomendaciones para conservar eficiencia.
+              </p>
+              <div class="work-meta">
+                <small>Mantenimiento</small>
+                <small>Chiller</small>
+                <small>Uso continuo</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-photo photo-3">
+              <span>Aire acondicionado</span>
+            </div>
+            <div class="work-body">
+              <h3>Servicio de aire acondicionado empresarial</h3>
+              <p>
+                Atención técnica para oficinas, locales comerciales, almacenes o instalaciones privadas.
+              </p>
+              <div class="work-meta">
+                <small>Empresas</small>
+                <small>A/C comercial</small>
+                <small>Soporte técnico</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-photo photo-4">
+              <span>Reparación</span>
+            </div>
+            <div class="work-body">
+              <h3>Diagnóstico y reparación de fallas</h3>
+              <p>
+                Evaluación de bajo rendimiento, paradas inesperadas, alarmas o fallas operativas.
+              </p>
+              <div class="work-meta">
+                <small>Diagnóstico</small>
+                <small>Reparación</small>
+                <small>Chillers</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-photo photo-5">
+              <span>Plantas</span>
+            </div>
+            <div class="work-body">
+              <h3>Soporte técnico en planta de producción</h3>
+              <p>
+                Atención a empresas que requieren continuidad operativa y climatización estable.
+              </p>
+              <div class="work-meta">
+                <small>Producción</small>
+                <small>Empresas de plásticos</small>
+                <small>Uso industrial</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-photo photo-6">
+              <span>Evaluación</span>
+            </div>
+            <div class="work-body">
+              <h3>Evaluación técnica del sistema</h3>
+              <p>
+                Revisión de condiciones, requerimientos del cliente y propuesta de solución técnica.
+              </p>
+              <div class="work-meta">
+                <small>Evaluación</small>
+                <small>Propuesta</small>
+                <small>Empresas</small>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="note-box">
+          <h3>Nota sobre privacidad de clientes</h3>
+          <p>
+            Por confidencialidad, algunos trabajos pueden mostrarse sin nombres comerciales
+            o datos identificables de los clientes. Esta sección puede actualizarse con fotos reales
+            y descripciones específicas conforme se autorice su publicación.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="impact">
+          <div>
+            <h2>La experiencia real genera confianza</h2>
+            <p>
+              Mostrar trabajos realizados ayuda a que nuevas empresas vean la capacidad técnica,
+              el orden y la experiencia de ICASERG SAC en sistemas de climatización empresarial.
+            </p>
+          </div>
+
+          <ul class="impact-list">
+            <li>Servicios en chillers y aire acondicionado comercial/industrial</li>
+            <li>Atención a empresas privadas, plantas y locales comerciales</li>
+            <li>Trabajos de instalación, mantenimiento, reparación y diagnóstico</li>
+            <li>Actualizable con fotos reales, categorías y casos técnicos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box">
+          <h2>¿Necesitas un servicio similar para tu empresa?</h2>
+          <p>
+            Cotiza instalación, mantenimiento o reparación de chillers y aire acondicionado
+            comercial/industrial con ICASERG SAC.
+          </p>
+
+          <a class="btn btn-light" href="/contacto/">
+            Cotizar servicio
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>ICASERG SAC</h3>
+        <p>
+          Instalación, mantenimiento y reparación de chillers y aire acondicionado
+          comercial/industrial para empresas privadas en Lima y provincias.
+        </p>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <p>WhatsApp: <a href="https://wa.me/51930390009" target="_blank">+51 930 390 009</a></p>
+        <p>Correo: <a href="mailto:contacto@icaserg.com">contacto@icaserg.com</a></p>
+      </div>
+
+      <div>
+        <h4>Servicios</h4>
+        <p>Instalación de chillers</p>
+        <p>Mantenimiento de chillers</p>
+        <p>Reparación de chillers</p>
+        <p>Aire acondicionado para empresas</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 ICASERG SAC. Climatización para empresas privadas.</p>
+    </div>
+  </footer>
+
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/51930390009?text=Hola%20ICASERG%20SAC%2C%20vi%20sus%20trabajos%20realizados%20y%20quiero%20cotizar%20un%20servicio%20para%20mi%20empresa."
+    target="_blank"
+  >
+    WhatsApp
+  </a>
+
+  <script>
+    const mobileToggle = document.getElementById("mobileToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    mobileToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
